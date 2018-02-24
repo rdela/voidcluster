@@ -31,7 +31,7 @@ export default ({ data }) => {
     content={post.html}
     contentComponent={HTMLContent}
     description={post.frontmatter.description}
-    helmet={<Helmet title={`Blog | ${post.frontmatter.title}`} />}
+    helmet={<Helmet title={`${post.frontmatter.title} | voidcluster`} />}
     title={post.frontmatter.title}
   />);
 };
