@@ -13,7 +13,9 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="voidcluster" />
     <Navbar />
-    <section>{children()}</section>
+    <section
+      style={{ marginBottom: "6rem" }}
+    >{children()}</section>
   </div>
 );
 
