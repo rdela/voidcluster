@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.0",
-  "author": "Austin Green",
+  "name": "voidcluster",
+  "description": "Gatsby and Netlify CMS experiment based on the Gatsby + Netlify CMS Starter",
+  "version": "1.1.1",
+  "author": "Ricky de Laveaga",
   "dependencies": {
     "bulma": "^0.6.0",
     "gatsby": "^1.9.63",
@@ -21,9 +21,12 @@
     "react-load-script": "0.0.6"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "netlify",
+    "cms"
   ],
-  "license": "MIT",
+  "license": "SEE LICENSE IN license.txt",
+  "private": true,
   "main": "n/a",
   "scripts": {
     "start": "npm run develop",
