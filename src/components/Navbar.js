@@ -10,21 +10,17 @@ const Navbar = () => (
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           <figure className="image">
-            <img src={logo} alt="voidcluster" style={{ width: '88px' }} />
+            <img src={logo} alt="voidcluster" style={{ width: '40px', height: '80px' }} />
           </figure>
         </Link>
-      </div>
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/about">
-          about
-        </Link>
-      </div>
-      <div className="navbar-end">
         <a className="navbar-item" href="https://github.com/rdela/voidcluster">
           <span className="icon">
             <img src={github} alt="Github" />
           </span>
         </a>
+        <Link className="navbar-item" to="/about">
+          about
+        </Link>
       </div>
     </div>
   </nav>
