@@ -12,9 +12,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           <div className="column is-10 is-offset-1">
             <header className="content" style={{ textAlign: 'center' }}>
               <h1 className="title is-size-2 is-bold-light">{title}</h1>
-              <div style={{ textAlign: 'left' }}>
+              <article>
                 <PageContent className="content" content={content} />
-              </div>
+              </article>
             </header>
           </div>
         </div>
