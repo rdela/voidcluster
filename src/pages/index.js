@@ -40,7 +40,7 @@ export default class IndexPage extends React.Component {
               <div
                 className="content"
                 style={{
-                  margin: "0 auto 3rem",
+                  margin: "0 auto 4.5rem",
                   maxWidth: "40rem"
                 }}
                 key={post.id}
@@ -56,7 +56,7 @@ export default class IndexPage extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button is-small" to={post.frontmatter.path}>
+                  <Link className="button" to={post.frontmatter.path}>
                     Read On →
                   </Link>
                 </p>
