@@ -28,15 +28,21 @@ export default class IndexPage extends React.Component {
           onLoad={() => this.handleScriptLoad()}
         />
         <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">way as void</h1>
-          </div>
+          <header
+            className="content"
+            style={{ textAlign: "center" }}
+          >
+            <h1 className="is-size-2 is-bold-light">way as void</h1>
+          </header>
           {posts
             .filter(post => post.node.frontmatter.templateKey === "blog-post")
             .map(({ node: post }) => (
               <div
                 className="content"
-                style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
+                style={{
+                  margin: "0 auto 3rem",
+                  maxWidth: "40rem"
+                }}
                 key={post.id}
               >
                 <p>
@@ -72,7 +78,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMMM YYYY")
             path
           }
         }
