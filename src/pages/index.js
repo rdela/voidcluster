@@ -22,7 +22,7 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <section className="section">
+      <section>
         <Script
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
@@ -32,9 +32,15 @@ export default class IndexPage extends React.Component {
             className="content"
             style={{ textAlign: "center" }}
           >
-            <h1 className="is-size-2 is-bold-light">way as void</h1>
+            <h1
+              className="is-size-2 is-bold-light"
+              style={{
+                padding: "2.5rem 1.5rem 0"
+              }}
+            >way as void</h1>
           </header>
-          {posts
+          <section  className="section">
+            {posts
             .filter(post => post.node.frontmatter.templateKey === "blog-post")
             .map(({ node: post }) => (
               <div
@@ -62,6 +68,7 @@ export default class IndexPage extends React.Component {
                 </p>
               </div>
             ))}
+          </section>
         </div>
       </section>
     );
