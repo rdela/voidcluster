@@ -24,3 +24,19 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper;
+
+export const defaultTemplateQuery = graphql`
+  query defaultTemplate {
+    site {
+      siteMetadata {
+        author
+        blogTitle
+        description
+        github
+        siteUrl
+        title
+        twitter
+      }
+    }
+  }
+`

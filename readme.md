@@ -2,8 +2,6 @@
 
 [Gatsby](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org) experiment based on the [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms)
 
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
-
 ## Prerequisites
 
 - Node
@@ -11,7 +9,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 ## Getting Started (Recommended)
 
-Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. The example here a stripped down version of the [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms) Kaldi coffee company template (itself adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms)). Use the button below to build and deploy your own copy of the repository:
+Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. This example (voidcluster) strips the [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms) Kaldi coffee company template (itself adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms), thanks [Austin Green](https://github.com/AustinGreen)) down to a simple blog. Use the button below to build and deploy your own copy of the repository:
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/rdela/voidcluster&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
@@ -47,13 +45,15 @@ Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick
 
 ```toml
 [build]
-  command = "gatsby build"
+  command = "npm run build"
   publish = "public"
 
 [template.environment]
   NODE_ENV = "production"
   NODE_VERSION = "node"
   RUBY_VERSION = "default"
+  YARN_FLAGS = "--no-ignore-optional"
+  YARN_VERSION = "1.3.2"
 ```
 
 https://www.netlify.com/blog/2016/08/30/introducing-deploy-contexts-in-netlify/
