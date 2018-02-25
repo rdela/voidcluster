@@ -50,7 +50,7 @@ export default class IndexPage extends React.Component {
                   }}
                   key={post.id}
                 >
-                  <p>
+                  <p className="description">
                     <Link
                       className="has-text-primary"
                       to={post.frontmatter.path}
