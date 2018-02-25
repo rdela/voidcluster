@@ -1,8 +1,8 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 
-import github from '../img/github-icon.svg';
-import logo from '../img/logo.svg';
+import github from '../img/github-icon.svg'
+import logo from '../img/logo.svg'
 
 const Navbar = () => (
   <nav className="navbar is-transparent">
@@ -10,7 +10,11 @@ const Navbar = () => (
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           <figure className="image">
-            <img src={logo} alt="voidcluster" style={{ width: '40px', height: '80px' }} />
+            <img
+              src={logo}
+              alt="voidcluster"
+              style={{ width: '40px', height: '80px' }}
+            />
           </figure>
         </Link>
         <a className="navbar-item" href="https://github.com/rdela/voidcluster">
@@ -24,6 +28,6 @@ const Navbar = () => (
       </div>
     </div>
   </nav>
-);
+)
 
-export default Navbar;
+export default Navbar

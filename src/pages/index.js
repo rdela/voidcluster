@@ -1,25 +1,25 @@
-import React from "react";
-import Link from "gatsby-link";
-import Script from "react-load-script";
-import graphql from "graphql";
+import React from 'react'
+import Link from 'gatsby-link'
+import Script from 'react-load-script'
+import graphql from 'graphql'
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
     if (typeof window !== `undefined` && window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
+      window.netlifyIdentity.on('init', user => {
         if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/'
+          })
         }
-      });
+      })
     }
-    window.netlifyIdentity.init();
+    window.netlifyIdentity.init()
   }
 
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 
     return (
       <section>
@@ -28,50 +28,52 @@ export default class IndexPage extends React.Component {
           onLoad={() => this.handleScriptLoad()}
         />
         <div className="container">
-          <header
-            className="content"
-            style={{ textAlign: "center" }}
-          >
+          <header className="content" style={{ textAlign: 'center' }}>
             <h1
               className="is-size-2 is-bold-light"
               style={{
-                padding: "2.5rem 1.5rem 0"
+                padding: '2.5rem 1.5rem 0',
               }}
-            >way as void</h1>
+            >
+              way as void
+            </h1>
           </header>
-          <section  className="section">
+          <section className="section">
             {posts
-            .filter(post => post.node.frontmatter.templateKey === "blog-post")
-            .map(({ node: post }) => (
-              <div
-                className="content"
-                style={{
-                  margin: "0 auto 4.5rem",
-                  maxWidth: "40rem"
-                }}
-                key={post.id}
-              >
-                <p>
-                  <Link className="has-text-primary" to={post.frontmatter.path}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.frontmatter.path}>
-                    Read On →
-                  </Link>
-                </p>
-              </div>
-            ))}
+              .filter(post => post.node.frontmatter.templateKey === 'blog-post')
+              .map(({ node: post }) => (
+                <div
+                  className="content"
+                  style={{
+                    margin: '0 auto 4.5rem',
+                    maxWidth: '40rem',
+                  }}
+                  key={post.id}
+                >
+                  <p>
+                    <Link
+                      className="has-text-primary"
+                      to={post.frontmatter.path}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                    <span> &bull; </span>
+                    <small>{post.frontmatter.date}</small>
+                  </p>
+                  <p>
+                    {post.excerpt}
+                    <br />
+                    <br />
+                    <Link className="button" to={post.frontmatter.path}>
+                      Read On →
+                    </Link>
+                  </p>
+                </div>
+              ))}
           </section>
         </div>
       </section>
-    );
+    )
   }
 }
 
@@ -92,4 +94,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
