@@ -3715,14 +3715,13 @@ gatsby-plugin-manifest@^1.0.14:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
 
-gatsby-plugin-netlify-cms@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-1.0.9.tgz#3292d45abdfc63f934a4fb996ccd3839f035e9e0"
+gatsby-plugin-netlify-cms@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-1.0.8.tgz#35cf16b7f2ef45ac88fd301bd424ed1cdf71abb7"
   dependencies:
     html-webpack-include-assets-plugin "^1.0.2"
     html-webpack-plugin "^2.30.1"
     netlify-cms "^1.0.1"
-    netlify-identity-widget "^1.4.11"
 
 gatsby-plugin-netlify@^1.0.18:
   version "1.0.18"
@@ -6513,10 +6512,6 @@ netlify-cms@^1.0.1:
     what-input "^5.0.3"
   optionalDependencies:
     fsevents "^1.0.14"
-
-netlify-identity-widget@^1.4.11:
-  version "1.4.11"
-  resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.4.11.tgz#27fbea5302cd1a360547570ddc855fd0cb528e5a"
 
 netrc@^0.1.3:
   version "0.1.4"
