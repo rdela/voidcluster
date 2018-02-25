@@ -5,7 +5,7 @@
   "author": "Ricky de Laveaga",
   "dependencies": {
     "bulma": "^0.6.0",
-    "gatsby": "^1.9.63",
+    "gatsby": "1.9.212",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-manifest": "^1.0.14",
     "gatsby-plugin-netlify": "^1.0.18",
