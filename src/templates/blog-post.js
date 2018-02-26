@@ -7,7 +7,7 @@ import TwitterActions from '../components/TwitterActions'
 class BlogPostTemplate extends React.Component {
   render(content, contentComponent, description, title, helmet) {
     const postData = this.props
-    console.log(postData)
+    // console.log(postData)
     const PostContent = contentComponent || HTMLContent
 
     return (
