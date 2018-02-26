@@ -2,33 +2,39 @@ import React from 'react'
 import graphql from 'graphql'
 import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
+import TwitterActions from '../components/TwitterActions'
 
-export const BlogPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  title,
-  helmet,
-}) => {
-  const PostContent = contentComponent || Content
+class BlogPostTemplate extends React.Component {
+  render(content, contentComponent, description, title, helmet) {
+    const postData = this.props
+    console.log(postData)
+    const PostContent = contentComponent || HTMLContent
 
-  return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
-          >
-            <h1 className="title is-size-2 is-bold-light">{title}</h1>
-            <p className="description">{description}</p>
-            <PostContent content={content} />
+    return (
+      <section className="section">
+        {postData.helmet || ''}
+        <div className="container content">
+          <div className="columns">
+            <div
+              className="column is-10 is-offset-1"
+              style={{ marginBottom: '6rem' }}
+            >
+              <h1 className="title is-size-2 is-bold-light">{postData.title}</h1>
+              <p className="description">{postData.description}</p>
+              <PostContent content={postData.content} />
+              <TwitterActions />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  )
+      </section>
+    )
+  }
+
+  componentDidMount() {
+    if (typeof twttr.widgets !== 'undefined') {
+      twttr.widgets.load()
+    }
+  }
 }
 
 export default ({ data }) => {
