@@ -11,10 +11,18 @@ export default () => (
       marginLeft: '0',
       marginRight: '1.5rem',
       marginTop: '3rem',
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'left',
+      alignItems: 'center',
     }}
   >
     <li
-      style={{ marginBottom: '1.5rem' }}
+      style={{
+        padding: '1rem 2rem 1rem 0',
+        marginBottom: '1.5rem',
+        marginTop: '0',
+      }}
     >
       <a
         className="twitter-share-button"
@@ -24,7 +32,13 @@ export default () => (
         Tweet
       </a>
     </li>
-    <li>
+    <li
+      style={{
+        padding: '1rem 2rem 1rem 0',
+        marginBottom: '1.5rem',
+        marginTop: '0',
+      }}
+    >
       <a
         className="twitter-follow-button"
         href="https://twitter.com/voidcluster"
