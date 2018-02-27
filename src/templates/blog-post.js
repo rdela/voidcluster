@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 import TwitterActions from '../components/TwitterActions'
 
@@ -27,7 +28,7 @@ class BlogPostTemplate extends React.Component {
                 <div style={{ marginTop: `4rem` }}>
                   <h4>Tags</h4>
                   <ul className="taglist">
-                    {tagGroup.map(tag => <li key={tag + `tag`}>{tag}</li>)}
+                    {tagGroup.map(tag => <li key={tag + `tag`}><Link to={`/tags/${tag}`}>{tag}</Link></li>)}
                   </ul>
                 </div>
               ) : null}
