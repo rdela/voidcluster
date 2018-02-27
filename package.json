@@ -4,7 +4,6 @@
   "version": "1.1.1",
   "author": "Ricky de Laveaga",
   "dependencies": {
-    "babel-plugin-lodash": "^3.3.2",
     "bulma": "^0.6.0",
     "gatsby": "^1.9.215",
     "gatsby-link": "^1.6.21",

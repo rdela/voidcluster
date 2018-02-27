@@ -73,15 +73,3 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     })
   })
 }
-
-// Sass and Lodash.
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  switch (stage) {
-    case `build-javascript`:
-      config.plugin(`Lodash`, webpackLodashPlugin, null)
-
-      break
-  }
-
-  return config
-}
