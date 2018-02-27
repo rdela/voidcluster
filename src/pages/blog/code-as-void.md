@@ -4,6 +4,10 @@ path: /code-as-void
 title: code as void
 date: 2018-02-24T10:09:00.000Z
 description: Some code from the void.
+tags:
+  - code
+  - c
+  - stack overflow
 ---
 
 Searching the void for “code void”, top hit, [Stack Overflow](https://duckduckgo.com/?q=code+void&ia=qa&iax=qa):

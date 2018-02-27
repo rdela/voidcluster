@@ -4,10 +4,10 @@ import Content, { HTMLContent } from '../components/Content'
 import TwitterActions from '../components/TwitterActions'
 
 class BlogPostTemplate extends React.Component {
-  render(content, contentComponent, description, title, helmet) {
+  render(content, contentComponent, description, tags, title, helmet) {
     const postData = this.props
-    // console.log(postData)
     const PostContent = contentComponent || HTMLContent
+    const tagGroup = postData.tags
 
     return (
       <section className="section">
@@ -23,6 +23,14 @@ class BlogPostTemplate extends React.Component {
               </h1>
               <p className="description">{postData.description}</p>
               <PostContent content={postData.content} />
+              {tagGroup && tagGroup.length ? (
+                <div style={{ marginTop: `4rem` }}>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    {tagGroup.map(tag => <li key={tag + `tag`}>{tag}</li>)}
+                  </ul>
+                </div>
+              ) : null}
               <TwitterActions />
             </div>
           </div>
@@ -47,6 +55,7 @@ export default ({ data }) => {
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
       helmet={<Helmet title={`${post.frontmatter.title} | voidcluster`} />}
+      tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />
   )
@@ -58,10 +67,11 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        path
         date(formatString: "DD MMMM YYYY")
-        title
         description
+        path
+        tags
+        title
       }
     }
   }

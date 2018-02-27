@@ -10,7 +10,7 @@ export default () => (
       marginBottom: '3rem',
       marginLeft: '0',
       marginRight: '1.5rem',
-      marginTop: '3rem',
+      marginTop: '1.5rem',
       display: 'flex',
       flexWrap: 'wrap',
       justifyContent: 'left',
