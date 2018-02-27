@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-path: hola-void
-title: /hola void
+path: /hola-void
+title: hola void
 date: 2018-02-24T07:07:35.995Z
 description: Some words from The Book of the Void.
 ---

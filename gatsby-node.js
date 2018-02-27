@@ -11,15 +11,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       ) {
         edges {
           node {
-            excerpt(pruneLength: 400)
-            html
-            id
             frontmatter {
-              templateKey
               path
-              date
-              title
-              description
+              templateKey
             }
           }
         }
@@ -39,9 +33,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           `src/templates/${String(node.frontmatter.templateKey)}.js`
         ),
         // additional data can be passed via context
-        context: {
-          path: pagePath,
-        },
+        context: {},
       })
     })
   })
