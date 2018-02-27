@@ -8,6 +8,7 @@ tags:
   - hola
   - hello
 ---
+
 > when the clouds of bewilderment clear away, there is the true void.
 
 [A book of five rings](https://www.worldcat.org/title/book-of-five-rings/oclc/10109809)
