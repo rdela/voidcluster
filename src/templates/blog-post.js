@@ -64,8 +64,8 @@ export default ({ data }) => {
 }
 
 export const blogPostQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query BlogPostByPath($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
