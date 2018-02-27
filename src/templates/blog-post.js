@@ -1,5 +1,4 @@
 import React from 'react'
-import graphql from 'graphql'
 import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
 import TwitterActions from '../components/TwitterActions'
