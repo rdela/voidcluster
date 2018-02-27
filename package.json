@@ -4,6 +4,7 @@
   "version": "1.1.1",
   "author": "Ricky de Laveaga",
   "dependencies": {
+    "babel-plugin-lodash": "^3.3.2",
     "bulma": "^0.6.0",
     "gatsby": "^1.9.215",
     "gatsby-link": "^1.6.21",
@@ -18,6 +19,8 @@
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
     "gatsby-transformer-sharp": "^1.6.13",
+    "lodash": "^4.17.5",
+    "lodash-webpack-plugin": "^0.11.4",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",

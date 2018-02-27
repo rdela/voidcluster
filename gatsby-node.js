@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const path = require('path')
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
@@ -13,6 +14,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           node {
             frontmatter {
               path
+              tags
               templateKey
             }
           }
@@ -25,16 +27,55 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      const pagePath = node.frontmatter.path
+    const posts = result.data.allMarkdownRemark.edges
+
+    posts.forEach( edge => {
+      const pagePath = edge.node.frontmatter.path
+      const pageTags = edge.node.frontmatter.tags
       createPage({
         path: pagePath,
+        tags: pageTags,
         component: path.resolve(
-          `src/templates/${String(node.frontmatter.templateKey)}.js`
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
-        // additional data can be passed via context
         context: {},
       })
     })
+
+    // Tag pages:
+    let tags = []
+    // Iterate through each post, putting all found tags into `tags`
+    posts.forEach( edge => {
+      if (_.get(edge, `node.frontmatter.tags`)) {
+        tags = tags.concat(edge.node.frontmatter.tags)
+      }
+    })
+    // Eliminate duplicate tags
+    tags = _.uniq(tags)
+
+    // Make tag pages
+    tags.forEach(tag => {
+      const tagPath = `/tags/${_.kebabCase(tag)}/`
+
+      createPage({
+        path: tagPath,
+        component: path.resolve(`src/templates/tags.js`),
+        context: {
+          tag,
+        },
+      })
+    })
   })
+}
+
+// Sass and Lodash.
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  switch (stage) {
+    case `build-javascript`:
+      config.plugin(`Lodash`, webpackLodashPlugin, null)
+
+      break
+  }
+
+  return config
 }
