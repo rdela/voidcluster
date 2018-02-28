@@ -34,7 +34,7 @@ export default class IndexPage extends React.Component {
                 padding: '2.5rem 1.5rem 0',
               }}
             >
-              way as void
+              {data.site.siteMetadata.blogTitle}
             </h1>
           </header>
           <section className="section">
@@ -78,6 +78,11 @@ export default class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query IndexQuery {
+    site {
+      siteMetadata {
+        blogTitle
+      }
+    }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {

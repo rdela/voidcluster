@@ -4,6 +4,9 @@ import React from 'react'
 
 class TwitterActions extends React.Component {
   render() {
+    console.log(this.props)
+    const account = this.props.account
+
     return (
       <ul
         className="twitter-actions"
@@ -28,7 +31,7 @@ class TwitterActions extends React.Component {
         >
           <a
             className="twitter-share-button"
-            href={`https://twitter.com/intent/tweet?via=voidcluster`}
+            href={`https://twitter.com/intent/tweet?via=${account}`}
             data-size="large"
           >
             Tweet
@@ -43,11 +46,11 @@ class TwitterActions extends React.Component {
         >
           <a
             className="twitter-follow-button"
-            href="https://twitter.com/voidcluster"
+            href={`https://twitter.com/${account}`}
             data-show-count="false"
             data-size="large"
           >
-            Follow @voidcluster
+            Follow @{account}
           </a>
         </li>
       </ul>

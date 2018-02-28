@@ -9,9 +9,10 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  helmet,
+  siteTwitter,
   tags,
   title,
-  helmet,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -39,7 +40,7 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
-            <TwitterActions />
+            <TwitterActions account={siteTwitter} />
           </div>
         </div>
       </div>
@@ -49,6 +50,7 @@ export const BlogPostTemplate = ({
 
 export default ({ data }) => {
   const { markdownRemark: post } = data
+  const siteTwitter = data.site.siteMetadata.twitter
 
   return (
     <BlogPostTemplate
@@ -56,6 +58,7 @@ export default ({ data }) => {
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
       helmet={<Helmet title={`${post.frontmatter.title} | voidcluster`} />}
+      siteTwitter={siteTwitter}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />
@@ -64,6 +67,11 @@ export default ({ data }) => {
 
 export const blogPostQuery = graphql`
   query BlogPostByID($id: String!) {
+    site {
+      siteMetadata {
+        twitter
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       id
       html
