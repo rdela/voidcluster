@@ -63,14 +63,13 @@ export default ({ data }) => {
 }
 
 export const blogPostQuery = graphql`
-  query BlogPostByPath($id: String!) {
+  query BlogPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
         date(formatString: "DD MMMM YYYY")
         description
-        path
         tags
         title
       }

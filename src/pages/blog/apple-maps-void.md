@@ -1,6 +1,5 @@
 ---
 templateKey: blog-post
-path: /apple-maps-void
 title: apple maps void
 date: 2018-02-26T21:42:30.582Z
 description: “way as void”

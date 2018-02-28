@@ -52,7 +52,7 @@ export default class IndexPage extends React.Component {
                   <p className="description">
                     <Link
                       className="has-text-primary"
-                      to={post.frontmatter.path}
+                      to={post.fields.slug}
                     >
                       {post.frontmatter.title}
                     </Link>
@@ -82,12 +82,14 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt(pruneLength: 400)
+          fields {
+            slug
+          }
           id
           frontmatter {
             title
             templateKey
             date(formatString: "DD MMMM YYYY")
-            path
           }
         }
       }
