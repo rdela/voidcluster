@@ -14,15 +14,15 @@ Searching the void for “code void”, top hit, [Stack Overflow](https://duckdu
 
 ## [What does void mean in C, C++, and C#](https://stackoverflow.com/questions/1043034/ddg#1043107)
 
-> Basically it means "nothing" or "no type"
+> Basically it means “nothing” or “no type”
 
 > There are 3 basic ways that void is used:
 
-> Function argument: `int myFunc(void)` -- the function takes nothing.
+> Function argument: `int myFunc(void)` — the function takes nothing.
 
-> Function return value: `void myFunc(int)` -- the function returns nothing
+> Function return value: `void myFunc(int)` — the function returns nothing
 
-> Generic data pointer: `void* data` -- 'data' is a pointer to data of unknown type, and cannot be dereferenced
+> Generic data pointer: `void* data` — ‘data’ is a pointer to data of unknown type, and cannot be dereferenced
 
 > Note: the `void` in a function argument is optional in C++, so `int myFunc()` is exactly the same as `int myFunc(void)`, and it is left out completely in C#. It is always required for a return value.
 
