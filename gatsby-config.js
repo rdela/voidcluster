@@ -3,10 +3,10 @@ module.exports = {
     author: `Ricky de Laveaga`,
     blogTitle: `way as void`,
     description: `way as void`,
-    github: `@rdela/voidcluster`,
+    github: `rdela/voidcluster`,
     siteUrl: `https://voidcluster.com/`,
     title: `voidcluster`,
-    twitter: `@voidcluster`,
+    twitter: `voidcluster`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
