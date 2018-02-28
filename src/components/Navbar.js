@@ -22,7 +22,7 @@ const Navbar = () => (
             <img src={github} alt="Github" />
           </span>
         </a>
-        <Link className="navbar-item" to="/about">
+        <Link className="navbar-item" to="/p/about">
           about
         </Link>
       </div>

@@ -4,7 +4,6 @@ import React from 'react'
 
 class TwitterActions extends React.Component {
   render() {
-    console.log(this.props)
     const account = this.props.account
 
     return (
