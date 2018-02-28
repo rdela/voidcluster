@@ -7,6 +7,7 @@ tags:
   - code
   - c
   - stack overflow
+  - void
 ---
 
 Searching the void for “code void”, top hit, [Stack Overflow](https://duckduckgo.com/?q=code+void&ia=qa&iax=qa):
