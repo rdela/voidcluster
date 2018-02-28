@@ -6,9 +6,9 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: "posts"
+    label: "Posts"
+    folder: "src/pages/p"
     create: true
     slug: "{{slug}}"
     fields:
@@ -21,12 +21,13 @@ collections:
 
   - name: "pages"
     label: "Pages"
+    create: true
     files:
-      - file: "src/pages/about/about.md"
+      - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/about"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/about/"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
