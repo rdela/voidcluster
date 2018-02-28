@@ -8,7 +8,6 @@ It’s new, and it’s _a test!_
 <figure style="text-align: center">
   <span  style="display: block; margin: 40px auto">
 
-
 ![New Brunswick Lt. Governor license plate](/img/3859918239_43f90d724f_o.jpg)
 
 <figcaption>
