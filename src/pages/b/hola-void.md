@@ -5,6 +5,7 @@ date: 2018-02-24T07:07:35.995Z
 description: Some words from The Book of the Void.
 tags:
   - ''
+  - ''
 ---
 
 > when the clouds of bewilderment clear away, there is the true void.
