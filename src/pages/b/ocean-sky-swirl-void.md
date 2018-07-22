@@ -4,14 +4,14 @@ title: ocean-sky swirl-void
 date: 2018-07-22T00:34:08.221Z
 description: "\U0001F30A\U0001F30C\U0001F300 void"
 tags:
-  - void
+  - island
   - ocean
   - sky
+  - snyder
   - swirl
   - turtle
-  - island
+  - void
   - zen
-  - snyder
 ---
 > Turtle Island swims
 >
