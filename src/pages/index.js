@@ -63,7 +63,7 @@ export default class IndexPage extends React.Component {
                     {post.excerpt}
                     <br />
                     <br />
-                    <Link className="button" to={post.frontmatter.path}>
+                    <Link className="button" to={post.fields.slug}>
                       Read On →
                     </Link>
                   </p>
