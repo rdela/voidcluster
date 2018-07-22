@@ -6,9 +6,9 @@ description: “way as void”
 tags:
   - apple
   - maps
+  - twitter
   - void
 ---
-
 Some action from the Twitter void
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">apple maps void 📱🗺⚫️<br>“way as void” <a href="https://t.co/zlDfkHVtTn">https://t.co/zlDfkHVtTn</a> <a href="https://twitter.com/voidcluster?ref_src=twsrc%5Etfw">@voidcluster</a> <a href="https://t.co/P24QDNdhH2">https://t.co/P24QDNdhH2</a> <a href="https://t.co/GJsNf8INMs">pic.twitter.com/GJsNf8INMs</a></p>&mdash; (((•ᵒᴥᵒ•))) (@rickydelaveaga) <a href="https://twitter.com/rickydelaveaga/status/967962694891454464?ref_src=twsrc%5Etfw">February 26, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">apple maps void 📱🗺⚫️<br>“way as void” <a href="https://t.co/zlDfkHVtTn">https://t.co/zlDfkHVtTn</a> <a href="https://twitter.com/voidcluster?ref_src=twsrc%5Etfw">@voidcluster</a> <a href="https://t.co/P24QDNdhH2">https://t.co/P24QDNdhH2</a> <a href="https://t.co/GJsNf8INMs">pic.twitter.com/GJsNf8INMs</a></p>&mdash; Ricky de Laveaga (@rickydelaveaga) <a href="https://twitter.com/rickydelaveaga/status/967962694891454464?ref_src=twsrc%5Etfw">February 26, 2018</a></blockquote>
