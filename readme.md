@@ -6,6 +6,7 @@
 
 - [Node](https://github.com/nodejs/node/blob/master/README.md)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
+- [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 
 ## Getting Started (Recommended)
 
@@ -32,8 +33,9 @@ yarn serve
 ```
 gatsby new [SITE_DIRECTORY_NAME] https://github.com/rdela/voidcluster
 cd [SITE_DIRECTORY_NAME]
-npm run build
-npm run serve
+yarn
+yarn build
+yarn serve
 ```
 
 ### Setting up the CMS
