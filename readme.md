@@ -1,15 +1,15 @@
 # voidcluster
 
-[Gatsby](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org) experiment based on the [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms)
+[Gatsby](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org) experiment based on the [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms/blob/master/README.md)
 
 ## Prerequisites
 
-- Node
+- [Node](https://github.com/nodejs/node/blob/master/README.md)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 
 ## Getting Started (Recommended)
 
-Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. This example (voidcluster) strips the [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms) Kaldi coffee company template (itself adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms), thanks [Austin Green](https://github.com/AustinGreen)) down to a simple blog. Use the button below to build and deploy your own copy of the repository:
+Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. This example (voidcluster) strips the [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms/blob/master/README.md) Kaldi coffee company template (itself adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms/blob/master/README.md), thanks [Austin Green](https://github.com/AustinGreen)) down to a simple blog. Use the button below to build and deploy your own copy of the repository:
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/rdela/voidcluster&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
@@ -17,8 +17,8 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 
 ### Access Locally
 ```
-$ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
-$ cd [REPO_NAME]
+$ git clone https://github.com/rdela/voidcluster.git
+$ cd voidcluster
 $ yarn
 $ npm run develop
 ```
