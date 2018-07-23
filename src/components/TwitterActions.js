@@ -57,7 +57,7 @@ class TwitterActions extends React.Component {
   }
 
   componentDidMount() {
-    if (typeof twttr.widgets !== 'undefined') {
+    if (typeof twttr !== 'undefined' && typeof twttr.widgets !== 'undefined') {
       twttr.widgets.load()
     }
   }
