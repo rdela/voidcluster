@@ -17,8 +17,4 @@ Some action from the Twitter void
 
 <video src="/img/rickydelaveaga-967962694891454464.mp4" poster="https://pbs.twimg.com/ext_tw_video_thumb/967962657377599489/pu/img/S_NIvBnmmGOFFEE0.jpg" controls="" style="width: 100%; height: 100%; max-width: 590px; max-height: 1280px; background-color: black; transform: rotate(0deg) scale(1);"></video>
 
-<<<<<<< HEAD
 <p>&nbsp;</p>
-=======
-<p>&nbsp;</p>
->>>>>>> master
