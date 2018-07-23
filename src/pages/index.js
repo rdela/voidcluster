@@ -50,10 +50,7 @@ export default class IndexPage extends React.Component {
                   key={post.id}
                 >
                   <p className="description">
-                    <Link
-                      className="has-text-primary"
-                      to={post.fields.slug}
-                    >
+                    <Link className="has-text-primary" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>

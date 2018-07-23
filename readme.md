@@ -17,23 +17,23 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 
 ### Access Locally
 ```
-$ git clone https://github.com/rdela/voidcluster.git
-$ cd voidcluster
-$ yarn
-$ npm run develop
+git clone https://github.com/rdela/voidcluster.git
+cd voidcluster
+yarn
+yarn develop
 ```
 To test the CMS locally, you'll need run a production build of the site:
 ```
-$ npm run build
-$ npm run serve
+yarn build
+yarn serve
 ```
 
 ## Getting Started (Without Netlify)
 ```
-$ gatsby new [SITE_DIRECTORY_NAME] https://github.com/rdela/voidcluster
-$ cd [SITE_DIRECTORY_NAME]
-$ npm run build
-$ npm run serve
+gatsby new [SITE_DIRECTORY_NAME] https://github.com/rdela/voidcluster
+cd [SITE_DIRECTORY_NAME]
+npm run build
+npm run serve
 ```
 
 ### Setting up the CMS
