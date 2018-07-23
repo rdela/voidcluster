@@ -3,6 +3,8 @@
   "description": "Gatsby and Netlify CMS experiment based on the Gatsby + Netlify CMS Starter",
   "version": "1.1.1",
   "author": "Ricky de Laveaga",
+  "license": "SEE LICENSE IN license.txt",
+  "private": true,
   "dependencies": {
     "bulma": "^0.7.1",
     "gatsby": "^1.9.277",
@@ -35,8 +37,6 @@
     "netlify",
     "cms"
   ],
-  "license": "SEE LICENSE IN license.txt",
-  "private": true,
   "main": "n/a",
   "scripts": {
     "start": "npm run develop",
