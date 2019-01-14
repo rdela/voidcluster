@@ -48,5 +48,16 @@
   },
   "devDependencies": {
     "prettier": "^1.13.7"
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "labels": [
+      "renovate"
+    ],
+    "assignees": [
+      "rdela"
+    ]
   }
 }
