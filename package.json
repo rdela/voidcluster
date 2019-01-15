@@ -7,7 +7,7 @@
   "private": true,
   "dependencies": {
     "bulma": "0.7.2",
-    "gatsby": "1.9.277",
+    "gatsby": "1.9.279",
     "gatsby-link": "1.6.46",
     "gatsby-plugin-manifest": "1.0.27",
     "gatsby-plugin-netlify": "1.0.21",
