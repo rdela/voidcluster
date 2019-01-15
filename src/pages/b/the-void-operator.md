@@ -6,7 +6,9 @@ description: signal that the return value is unimportant
 tags:
   - void
 ---
-> To more clearly signal that the return value is unimportant you can use the void operator:
+[Avoid Else, Return Early](http://blog.timoxley.com/post/47041269194/avoid-else-return-early) by Tim Kevin Oxley
+
+> To more clearly signal that the return value is unimportant you can use the [void operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void):
 >
 > ```js
 > function(err, results) {
