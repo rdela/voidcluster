@@ -4,6 +4,8 @@ title: the void operator
 date: 2019-01-15T09:40:25.076Z
 description: signal that the return value is unimportant
 tags:
+  - code
+  - operator
   - void
 ---
 [Avoid Else, Return Early](http://blog.timoxley.com/post/47041269194/avoid-else-return-early) by Tim Kevin Oxley
