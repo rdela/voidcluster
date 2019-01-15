@@ -11,7 +11,7 @@ tags:
 ---
 Some action from the Twitter void
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">apple maps void 📱🗺⚫️<br>“way as void” <a href="https://t.co/zlDfkHVtTn">https://t.co/zlDfkHVtTn</a> <a href="https://twitter.com/voidcluster?ref_src=twsrc%5Etfw">@voidcluster</a> <a href="https://t.co/P24QDNdhH2">https://t.co/P24QDNdhH2</a> <a href="https://t.co/GJsNf8INMs">pic.twitter.com/GJsNf8INMs</a></p>&mdash; Ricky de Laveaga (@rickydelaveaga) <a href="https://twitter.com/rickydelaveaga/status/967962694891454464?ref_src=twsrc%5Etfw">February 26, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">apple maps void 📱🗺⚫️<br>“way as void” <a href="https://maps.apple.com/?address=Ash%20Way,%20Altona%20VIC%203018,%20Australia&amp;ll=-37.871470,144.804410&amp;q=way%20as%20void&amp;_ext=EiQpkbIkvpbvQsAxepUcb7oZYkA5As2g7YHvQsBBRWunBsEZYkA%3D&amp;t=m">https://maps.apple.com/?address…</a> <a href="https://twitter.com/voidcluster">@voidcluster</a> <a href="https://twitter.com/voidcluster/status/967939762429476870">https://twitter.com/voidcluster/status/967939762429476870</a> </p>&mdash; Ricky de Laveaga (<a href="https://twitter.com/rickydelaveaga">@rickydelaveaga</a>) February 26, 2018</blockquote>
 
 <p>&nbsp;</p>
 

@@ -1,7 +1,8 @@
 import React from 'react'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
+import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import TwitterActions from '../components/TwitterActions'
 
@@ -53,15 +54,17 @@ export default ({ data }) => {
   const siteTwitter = data.site.siteMetadata.twitter
 
   return (
-    <BlogPostTemplate
-      content={post.html}
-      contentComponent={HTMLContent}
-      description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | voidcluster`} />}
-      siteTwitter={siteTwitter}
-      tags={post.frontmatter.tags}
-      title={post.frontmatter.title}
-    />
+    <Layout>
+      <BlogPostTemplate
+        content={post.html}
+        contentComponent={HTMLContent}
+        description={post.frontmatter.description}
+        helmet={<Helmet title={`${post.frontmatter.title} | voidcluster`} />}
+        siteTwitter={siteTwitter}
+        tags={post.frontmatter.tags}
+        title={post.frontmatter.title}
+      />
+    </Layout>
   )
 }
 
