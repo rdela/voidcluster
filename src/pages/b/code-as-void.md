@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: code as void
 date: 2018-02-24T10:09:00.000Z
-description: Some code from the void.
+description: some code from the void
 tags:
   - c
   - code
