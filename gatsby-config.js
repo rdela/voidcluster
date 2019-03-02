@@ -91,7 +91,7 @@ module.exports = {
       options: {
         develop: true,            // Activates purging in npm run develop
         purgeOnly: ['components/all.sass'], // applies purging only on the bulma css file
-        whitelist: ['blockquote'], // stops eager removal of this element/selector
+        whitelist: ['blockquote', 'embed', 'fluid-width-video-wrapper', 'four-three', 'iframe', 'object', 'video'], // stops eager removal of this element/selector
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
