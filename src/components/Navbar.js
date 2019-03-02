@@ -21,6 +21,9 @@ const Navbar = () => (
             <img src={github} alt="Github" />
           </span>
         </a>
+        <Link className="navbar-item" to="/t/">
+          tags
+        </Link>
         <Link className="navbar-item" to="/p/about">
           about
         </Link>
