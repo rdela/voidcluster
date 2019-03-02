@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Alan Watts - On Nothingness
+title: alan watts on nothingness
 date: 2019-03-01T23:45:54.081Z
 description: >-
   That which is void is precisely Form, and that which is Form is precisely
