@@ -2,8 +2,9 @@
 templateKey: blog-post
 title: hola void
 date: 2018-02-24T07:07:35.995Z
-description: Some words from The Book of the Void.
+description: some words from the book of the void
 tags:
+  - book
   - five rings
   - kensei
   - musashi
