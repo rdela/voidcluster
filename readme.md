@@ -52,12 +52,14 @@ Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick
 
 [build.environment]
   NODE_ENV = "production"
-  NODE_VERSION = "node"
-  NPM_VERSION = "6.1.0"
+  NODE_VERSION = "--lts"
+  NPM_VERSION = "[X.X.X]"
   RUBY_VERSION = "default"
   YARN_FLAGS = "--no-ignore-optional"
-  YARN_VERSION = "1.7.0"
+  YARN_VERSION = "[X.X.X]"
 ```
+
+See current [NPM_VERSION](https://github.com/rdela/voidcluster/blob/master/netlify.toml#L8) or [YARN_VERSION](https://github.com/rdela/voidcluster/blob/master/netlify.toml#L11).
 
 #### [Netlify TOML reference](https://www.netlify.com/docs/netlify-toml-reference/)
 
