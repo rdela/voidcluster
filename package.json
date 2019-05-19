@@ -6,7 +6,7 @@
   "license": "SEE LICENSE IN license.txt",
   "private": true,
   "dependencies": {
-    "bulma": "0.7.4",
+    "bulma": "0.7.5",
     "gatsby": "2.5.5",
     "gatsby-image": "2.1.0",
     "gatsby-plugin-lodash": "3.0.5",
