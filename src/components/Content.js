@@ -8,5 +8,4 @@ const Content = ({ content, className }) => (
   <article className={className}>{content}</article>
 )
 
-
 export default Content

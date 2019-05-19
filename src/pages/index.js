@@ -23,7 +23,9 @@ export default class IndexPage extends React.Component {
             </header>
             <section className="section">
               {posts
-                .filter(post => post.node.frontmatter.templateKey === 'blog-post')
+                .filter(
+                  post => post.node.frontmatter.templateKey === 'blog-post'
+                )
                 .map(({ node: post }) => (
                   <div
                     className="content"
@@ -41,11 +43,11 @@ export default class IndexPage extends React.Component {
                       <small>{post.frontmatter.date}</small>
                     </p>
                     <p>
-                      {post.excerpt}
+                      {post.frontmatter.description}
                       <br />
                       <br />
                       <Link className="button" to={post.fields.slug}>
-                        Read On →
+                        Open Void →
                       </Link>
                     </p>
                   </div>
@@ -68,15 +70,15 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 400)
           fields {
             slug
           }
           id
           frontmatter {
-            title
-            templateKey
             date(formatString: "DD MMMM YYYY")
+            description
+            templateKey
+            title
           }
         }
       }
