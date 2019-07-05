@@ -1,6 +1,6 @@
 # voidcluster
 
-[Gatsby](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org) experiment based on the [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms/blob/master/README.md)
+[Gatsby](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org) experiment based on the [Gatsby + Netlify CMS Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms/blob/master/README.md)
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@
 
 ## Getting Started (Recommended)
 
-Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. This example (voidcluster) strips the [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms/blob/master/README.md) Kaldi coffee company template (itself adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms/blob/master/README.md), thanks [Austin Green](https://github.com/AustinGreen)) down to a simple blog. Use the button below to build and deploy your own copy of the repository:
+Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. This example (voidcluster) strips the [Gatsby + Netlify CMS Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms/blob/master/README.md) Kaldi coffee company template (itself adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms/blob/master/README.md), thanks [Austin Green](https://github.com/AustinGreen)) down to a simple blog. Use the button below to build and deploy your own copy of the repository:
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/rdela/voidcluster&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
@@ -128,9 +128,9 @@ Included versions: 2.2.9 2.4.3 2.3.6
 
 See these commits on the Gatsby Netlify CMS starter.
 
-##### [Update netlify.toml](https://github.com/AustinGreen/gatsby-starter-netlify-cms/commit/5c349ced8c4c915c15d322f6fd9ff0e188fd78dd)
+##### [Update netlify.toml](https://github.com/netlify-templates/gatsby-starter-netlify-cms/commit/5c349ced8c4c915c15d322f6fd9ff0e188fd78dd)
 
-##### [Add "--no-ignore-optional" for netlify](https://github.com/AustinGreen/gatsby-starter-netlify-cms/commit/b6cdfce0277cf2d2023cd7427ee32390ce8e419b)
+##### [Add "--no-ignore-optional" for netlify](https://github.com/netlify-templates/gatsby-starter-netlify-cms/commit/b6cdfce0277cf2d2023cd7427ee32390ce8e419b)
 
 #### Further Reading on Netlify Deployment and ENV vars
 

@@ -59,8 +59,16 @@ export default ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={<Helmet title={`${post.frontmatter.title} | voidcluster`} />}
-        siteTwitter={siteTwitter}
+        helmet={
+          <Helmet titleTemplate={`%s | ${data.site.siteMetadata.title}`}>
+            <title>{`${post.frontmatter.title}`}</title>
+            <meta
+              name="description"
+              content={`${post.frontmatter.description}`}
+            />
+          </Helmet>
+        }
+        siteTwitter={data.site.siteMetadata.twitter}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -72,6 +80,7 @@ export const blogPostQuery = graphql`
   query BlogPostByID($id: String!) {
     site {
       siteMetadata {
+        title
         twitter
       }
     }
