@@ -8,7 +8,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section>
       <Helmet title={title} />
       <div className="container">
         <div className="columns">
@@ -17,11 +17,27 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
             style={{ marginBottom: '6rem' }}
           >
             <header className="content" style={{ textAlign: 'center' }}>
-              <h1 className="title is-size-2 is-bold-light">{title}</h1>
-              <article>
+              <h1
+                className="title is-size-2 is-bold-light"
+                style={{
+                  padding: '2.5rem 1.5rem 0',
+                }}
+              >
+                {title}
+              </h1>
+            </header>
+            <section className="section">
+              <article
+                style={{
+                  fontSize: '1.625rem',
+                  margin: '0 auto',
+                  maxWidth: '40rem',
+                  textAlign: 'left',
+                }}
+              >
                 <PageContent className="content" content={content} />
               </article>
-            </header>
+            </section>
           </div>
         </div>
       </div>

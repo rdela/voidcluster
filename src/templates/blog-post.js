@@ -18,16 +18,37 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section>
       {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div
             className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
+            style={{
+              fontSize: '1.3125rem',
+              margin: '0 auto 6rem',
+              maxWidth: '40rem',
+            }}
           >
-            <h1 className="title is-size-2 is-bold-light">{title}</h1>
-            <p className="description">{description}</p>
+            <header><h1
+            className="title is-size-2 is-bold-light"
+            style={{
+              padding: '2.5rem 1.5rem 0',
+              textAlign: 'center',
+            }}
+            >
+            {title}
+            </h1>
+            <p
+            className="description"
+            style={{
+            textAlign: 'center',
+            }}
+            >
+            {description}
+            </p>
+            </header>
+            <section className="section">
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -42,6 +63,7 @@ export const BlogPostTemplate = ({
               </div>
             ) : null}
             <TwitterActions account={siteTwitter} />
+            </section>
           </div>
         </div>
       </div>
@@ -51,7 +73,6 @@ export const BlogPostTemplate = ({
 
 export default ({ data }) => {
   const { markdownRemark: post } = data
-  const siteTwitter = data.site.siteMetadata.twitter
 
   return (
     <Layout>

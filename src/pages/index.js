@@ -22,36 +22,44 @@ export default class IndexPage extends React.Component {
               </h1>
             </header>
             <section className="section">
-              {posts
-                .filter(
-                  post => post.node.frontmatter.templateKey === 'blog-post'
-                )
-                .map(({ node: post }) => (
-                  <div
-                    className="content"
-                    style={{
-                      margin: '0 auto 4.5rem',
-                      maxWidth: '40rem',
-                    }}
-                    key={post.id}
-                  >
-                    <p className="description">
-                      <Link className="has-text-primary" to={post.fields.slug}>
-                        {post.frontmatter.title}
-                      </Link>
-                      <span> &bull; </span>
-                      <small>{post.frontmatter.date}</small>
-                    </p>
-                    <p>
-                      {post.frontmatter.description}
-                      <br />
-                      <br />
-                      <Link className="button" to={post.fields.slug}>
-                        Open Void →
-                      </Link>
-                    </p>
-                  </div>
-                ))}
+              <nav>
+                {posts
+                  .filter(
+                    post => post.node.frontmatter.templateKey === 'blog-post'
+                  )
+                  .map(({ node: post }) => (
+                    <div
+                      className="content"
+                      style={{
+                        margin: '0 auto 4.5rem',
+                        maxWidth: '40rem',
+                      }}
+                      key={post.id}
+                    >
+                      <p
+                        className="description"
+                        style={{ fontSize: '1.625rem' }}
+                      >
+                        <Link
+                          className="has-text-primary"
+                          to={post.fields.slug}
+                        >
+                          {post.frontmatter.title}
+                        </Link>
+                        <span> &bull; </span>
+                        <small>{post.frontmatter.date}</small>
+                      </p>
+                      <p style={{ fontSize: '1.3125rem' }}>
+                        {post.frontmatter.description}
+                        <br />
+                        <br />
+                        <Link className="button" to={post.fields.slug}>
+                          Open Void →
+                        </Link>
+                      </p>
+                    </div>
+                  ))}
+              </nav>
             </section>
           </div>
         </section>
