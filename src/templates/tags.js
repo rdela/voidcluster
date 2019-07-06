@@ -24,16 +24,21 @@ class TagRoute extends React.Component {
       <Layout>
         <section className="section">
           <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
+          <div className="container content" style={{ maxWidth: '40rem' }}>
             <div className="columns">
               <div
                 className="column is-10 is-offset-1"
                 style={{ marginBottom: '6rem' }}
               >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
-                  <Link to="/t/">Browse all tags</Link>
+                <h3
+                  className="title is-size-4 is-bold-light"
+                  style={{ marginBottom: '3rem' }}
+                >
+                  {tagHeader}
+                </h3>
+                <ul className="postlist">{postLinks}</ul>
+                <p style={{ fontSize: '1.3125rem', textAlign: 'center' }}>
+                  <Link to="/t/">browse all tags</Link>
                 </p>
               </div>
             </div>
