@@ -55,14 +55,18 @@
     "prettier": "1.18.2"
   },
   "renovate": {
+    "assignees": [
+      "rdela"
+    ],
+    "automerge": true,
     "extends": [
       "config:base"
     ],
     "labels": [
       "renovate"
     ],
-    "assignees": [
-      "rdela"
-    ]
+    "major": {
+      "automerge": false
+    }
   }
 }
