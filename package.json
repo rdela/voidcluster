@@ -42,7 +42,7 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "serve": "gatsby serve",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
