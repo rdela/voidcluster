@@ -30,39 +30,40 @@ export const BlogPostTemplate = ({
               maxWidth: '40rem',
             }}
           >
-            <header><h1
-            className="title is-size-2 is-bold-light"
-            style={{
-              padding: '2.5rem 1.5rem 0',
-              textAlign: 'center',
-            }}
-            >
-            {title}
-            </h1>
-            <p
-            className="description"
-            style={{
-            textAlign: 'center',
-            }}
-            >
-            {description}
-            </p>
+            <header>
+              <h1
+                className="title is-size-2 is-bold-light"
+                style={{
+                  padding: '2.5rem 1.5rem 0',
+                  textAlign: 'center',
+                }}
+              >
+                {title}
+              </h1>
+              <p
+                className="description"
+                style={{
+                  textAlign: 'center',
+                }}
+              >
+                {description}
+              </p>
             </header>
             <section className="section">
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/t/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-            <TwitterActions account={siteTwitter} />
+              <PostContent content={content} />
+              {tags && tags.length ? (
+                <div style={{ marginTop: `4rem` }}>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    {tags.map(tag => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/t/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+              <TwitterActions account={siteTwitter} />
             </section>
           </div>
         </div>

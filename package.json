@@ -1,7 +1,7 @@
 {
   "name": "voidcluster",
   "description": "Gatsby and Netlify CMS experiment based on the Gatsby + Netlify CMS Starter",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "author": "Ricky de Laveaga",
   "license": "SEE LICENSE IN license.txt",
   "private": true,
@@ -37,18 +37,12 @@
     "typeface-source-sans-pro": "0.0.75",
     "typeface-source-serif-pro": "0.0.75"
   },
-  "keywords": [
-    "gatsby",
-    "netlify",
-    "cms"
-  ],
-  "main": "n/a",
   "scripts": {
-    "start": "npm run develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
