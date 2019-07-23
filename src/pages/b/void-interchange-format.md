@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Void Interchange Format
+title: void interchange format
 date: 2019-05-09T05:15:52.073Z
 description: GIFs (VIFs?) from the void
 tags:
