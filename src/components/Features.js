@@ -1,13 +1,21 @@
 import React from 'react'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map(item => (
-      <div key={item.image} className="column is-6">
+      <div key={item.text} className="column is-6">
         <section className="section">
-          <p className="has-text-centered">
-            <img alt="" src={item.image} />
-          </p>
+          <div className="has-text-centered">
+            <div
+              style={{
+                width: '240px',
+                display: 'inline-block',
+              }}
+            >
+              <PreviewCompatibleImage imageInfo={item} />
+            </div>
+          </div>
           <p>{item.text}</p>
         </section>
       </div>

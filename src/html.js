@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 export default class HTML extends React.Component {
   render() {
@@ -17,7 +16,7 @@ export default class HTML extends React.Component {
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
           <noscript key="noscript" id="gatsby-noscript">
-            This app works best with JavaScript enabled.
+            This site works best with JavaScript enabled.
           </noscript>
           <div
             key={`body`}
@@ -49,13 +48,4 @@ export default class HTML extends React.Component {
       </html>
     )
   }
-}
-
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
 }
