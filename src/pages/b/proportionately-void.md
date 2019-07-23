@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Proportionately Void
+title: proportionately void
 date: 2019-07-22T22:51:29.787Z
 description: '“we are as void, proportionately, as intergalactic space”'
 tags:
@@ -34,5 +34,10 @@ tags:
 
 _Best-selling author Margaret Wheatley talks to Lisa Gill about the current landscape of work, restoring leadership as a noble profession and self-organisation._
 
-_Margaret Wheatley is an author known for bringing lenses like anthropology and quantum science to the fields of leadership and organisational design. In this thoughtful conversation, she challenges the idea of large-scale change in favour of creating “islands of sanity” and doing meaningful work in a local context. She talks about restoring leadership as a noble profession, her take on the growing number of self-managing organisations today, and how we can train as “Warriors for the Human Spirit.” Resources: Margaret’s website Warriors for the Human Spirit trainings Margaret’s book “Who Do We Choose to Be?”_
+_Margaret Wheatley is an author known for bringing lenses like anthropology and quantum science to the fields of leadership and organisational design. In this thoughtful conversation, she challenges the idea of large-scale change in favour of creating “islands of sanity” and doing meaningful work in a local context. She talks about restoring leadership as a noble profession, her take on the growing number of self-managing organisations today, and how we can train as “Warriors for the Human Spirit.”_
 
+_Resources:_
+
+* __[_Margaret’s website_](https://margaretwheatley.com/)__
+* __[_Warriors for the Human Spirit trainings_](https://margaretwheatley.com/2019-warriors-for-the-human-spirit-training-new/)__
+* _Margaret’s book_ [_“Who Do We Choose to Be?”_](https://margaretwheatley.com/books-products/books/who-do-we-choose-to-be/)
