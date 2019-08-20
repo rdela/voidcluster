@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "bulma": "0.7.5",
-    "gatsby": "2.13.68",
-    "gatsby-image": "2.2.8",
+    "gatsby": "2.13.70",
+    "gatsby-image": "2.2.9",
     "gatsby-plugin-lodash": "3.1.2",
     "gatsby-plugin-manifest": "2.2.5",
     "gatsby-plugin-netlify": "2.1.5",
