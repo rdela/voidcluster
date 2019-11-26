@@ -92,3 +92,44 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,.description,.button
   margin-top: 0 !important
 
 @import "~bulma"
+
+@media(prefers-color-scheme: dark)
+  html
+    background-color: #000
+
+  body
+    color: #bbb
+
+  .has-text-primary
+    color: hsl(187, 100%, 40%) !important
+
+  a.has-text-primary:hover, a.has-text-primary:focus
+    color: hsl(50, 100%, 40%) !important
+
+  a, .navbar-item
+    color: hsl(187, 100%, 40%)
+
+  a:hover, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover
+    color: hsl(50, 100%, 40%)
+
+  .button
+    background-color: #282828
+    border-color: #151515
+    color: #ccc
+
+  .button:hover
+    border-color: #000
+    color: #888
+
+  .content h1, .content h2, .content h3, .content h4, strong
+    color: #ccc
+
+  .navbar
+    background-color: #000
+
+  .navbar-item img
+    filter: invert(100%)
+
+  .content blockquote
+    background-color: #151515
+    border-color: #484848
