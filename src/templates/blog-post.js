@@ -82,7 +82,7 @@ export default ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate={`%s | ${data.site.siteMetadata.title}`}>
+          <Helmet titleTemplate={`%s - ${data.site.siteMetadata.title}`}>
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"

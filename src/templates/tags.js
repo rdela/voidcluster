@@ -23,7 +23,7 @@ class TagRoute extends React.Component {
     return (
       <Layout>
         <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
+          <Helmet title={`${tag} - ${title}`} />
           <div className="container content" style={{ maxWidth: '40rem' }}>
             <div className="columns">
               <div
