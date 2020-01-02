@@ -4,61 +4,103 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 
-const TagsPage = ({
-  data: {
-    allMarkdownRemark: { group },
-    site: {
-      siteMetadata: { title },
-    },
-  },
-}) => (
-  <Layout>
-    <section>
-      <Helmet title={`tags - ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
-          >
-            <header>
-              <h1
-                className="title is-size-2 is-bold-light"
-                style={{
-                  padding: '2.5rem 1.5rem 0',
-                  textAlign: 'center',
-                }}
+class TagsPage extends React.Component {
+  state = { alphabetical: true }
+
+  render() {
+    const { data } = this.props
+    const { group } = data.allMarkdownRemark
+    const groupSortedByCount = group.slice().sort((a, b) => {
+      if (a.totalCount > b.totalCount) return -1
+      if (a.totalCount < b.totalCount) return 1
+      return 0
+    })
+    let { alphabetical } = this.state
+    if (this.props.location.hash === '#popularity') {
+      alphabetical = false
+    }
+    return (
+      <Layout>
+        <section>
+          <Helmet title={`tags - ${data.site.siteMetadata.title}`} />
+          <div className="container content">
+            <div className="columns">
+              <div
+                className="column is-10 is-offset-1"
+                style={{ marginBottom: '6rem' }}
               >
-                tags
-              </h1>
-            </header>
-            <section className="section">
-              <nav>
-                <ul
-                  className="taglist"
-                  style={{
-                    fontSize: '1.625rem',
-                    margin: '0 auto',
-                    maxWidth: '40rem',
-                    textAlign: 'left',
-                  }}
-                >
-                  {group.map(tag => (
-                    <li key={tag.fieldValue}>
-                      <Link to={`/t/${kebabCase(tag.fieldValue)}/`}>
-                        {tag.fieldValue} ({tag.totalCount})
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </section>
+                <header>
+                  <h1
+                    className="title is-size-2 is-bold-light"
+                    style={{
+                      padding: '2.5rem 1.5rem 0',
+                      textAlign: 'center',
+                    }}
+                  >
+                    tags
+                  </h1>
+                  <nav className="topnav">
+                    <ul>
+                      <li>
+                        Sort tags:{` `}
+                      </li>
+                      <li>
+                        <a
+                          onClick={() => this.setState({ alphabetical: true })}
+                          href="#alphabetical"
+                        >
+                          Alphabetically
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          onClick={() => this.setState({ alphabetical: false })}
+                          href="#popularity"
+                        >
+                          By Popularity
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </header>
+                {alphabetical && (
+                  <section id="alphabetical" className="section alphabetical">
+                    <nav>
+                      <ul className="taglist page">
+                        {group.map(tag => (
+                          <li key={tag.fieldValue}>
+                            <Link to={`/t/${kebabCase(tag.fieldValue)}/`}>
+                              {tag.fieldValue} ({tag.totalCount})
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </nav>
+                  </section>
+                )}
+                {!alphabetical && (
+                  <section id="popularity" className="section popularity">
+                    <nav>
+                      <ul className="taglist page">
+                        {groupSortedByCount.map(tag => (
+                          <li key={tag.fieldValue}>
+                            <Link to={`/t/${kebabCase(tag.fieldValue)}/`}>
+                              {tag.fieldValue} ({tag.totalCount})
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </nav>
+                  </section>
+                )}
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-  </Layout>
-)
+        </section>
+      </Layout>
+    )
+  }
+}
 
 export default TagsPage
 
