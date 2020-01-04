@@ -22,14 +22,7 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <div className="container content">
         <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{
-              fontSize: '1.3125rem',
-              margin: '0 auto 6rem',
-              maxWidth: '40rem',
-            }}
-          >
+          <div className="column is-10 is-offset-1">
             <header>
               <h1
                 className="title is-size-2 is-bold-light"
@@ -50,20 +43,28 @@ export const BlogPostTemplate = ({
               </p>
             </header>
             <section className="section">
-              <PostContent content={content} />
-              {tags && tags.length ? (
-                <div style={{ marginTop: `4rem` }}>
-                  <h4>Tags</h4>
-                  <ul className="taglist">
-                    {tags.map(tag => (
-                      <li key={tag + `tag`}>
-                        <Link to={`/t/${kebabCase(tag)}/`}>{tag}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-              <TwitterActions account={siteTwitter} />
+              <article
+                style={{
+                  fontSize: '1.3125rem',
+                  margin: '0 auto 6rem',
+                  maxWidth: '40rem',
+                }}
+              >
+                <PostContent content={content} />
+                {tags && tags.length ? (
+                  <div style={{ marginTop: `4rem` }}>
+                    <h4>Tags</h4>
+                    <ul className="taglist">
+                      {tags.map(tag => (
+                        <li key={tag + `tag`}>
+                          <Link to={`/t/${kebabCase(tag)}/`}>{tag}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+                <TwitterActions account={siteTwitter} />
+              </article>
             </section>
           </div>
         </div>

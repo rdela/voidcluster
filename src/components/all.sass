@@ -3,6 +3,10 @@
 // Config
 $vc-green: #005864
 $vc-green-invert: #fff
+$off-white: #dbdbdb
+$near-black: #151515
+$deep-turquoise: hsl(187, 100%, 40%)
+$lemon-yellow: hsl(50, 100%, 40%)
 
 $primary: $vc-green
 $primary-invert: $vc-green-invert
@@ -59,25 +63,36 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,.description,.button
 
 .content .topnav
   font-size: 1.3125rem
-  padding: 1.5rem 1.5rem 0
+  padding: 0 1.5rem
   ul
     display: flex
     flex-wrap: wrap
+    align-items: center
   li
     padding: 0 1.5rem 0.5rem 0
     list-style: none
     margin-top: 0
   li + li
     margin-top: 0
+  .link-target
+    height: 1.5rem
 
 .content .taglist.page, .content .topnav ul
   margin: 0 auto
   max-width: 40rem
   text-align: left
 
+a:focus
+  color: #363636
+
+a.selected
+  color: gray
+  &:hover
+    color: gray
+
 .content blockquote
   background-color: #f5f5f5
-  border-left: 5px solid #dbdbdb
+  border-left: 5px solid $off-white
   padding: 1.25em 1.5em
 
 // Helper Classes
@@ -98,59 +113,64 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,.description,.button
   padding-top: 56.25%
   position: relative
   width: 100%
-
-.fluid-width-video-wrapper.four-three
-  padding-top: 75%
-
-.fluid-width-video-wrapper embed, .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper video
-  height: 100%
-  left: 0
-  position: absolute
-  top: 0
-  width: 100%
-
-.margin-top-0
-  margin-top: 0 !important
+  &.four-three
+    padding-top: 75%
+  embed, iframe, object, video
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
 
 @import "~bulma"
 
 @media(prefers-color-scheme: dark)
   html
-    background-color: #000
+    background-color: black
 
   body
     color: #bbb
 
   .has-text-primary
-    color: hsl(187, 100%, 40%) !important
+    color: $deep-turquoise !important
 
   a.has-text-primary:hover, a.has-text-primary:focus
-    color: hsl(50, 100%, 40%) !important
+    color: $lemon-yellow !important
 
   a, .navbar-item
-    color: hsl(187, 100%, 40%)
+    color: $deep-turquoise
 
-  a:hover, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover
-    color: hsl(50, 100%, 40%)
+  a:hover, a:focus, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover
+    color: $lemon-yellow
+
+
+  a.selected:hover, a.selected:focus
+    color: gray
 
   .button
     background-color: #282828
-    border-color: #151515
-    color: #ccc
-
-  .button:hover
-    border-color: #000
-    color: #888
+    border-color: transparent
+    color: silver
+    &:focus
+      color: $off-white !important
+    &:hover
+      border-color: $lemon-yellow !important
+      color: #888 !important
+    &.selected
+      &:hover
+        border-color: #3273dc !important
+      &:focus
+        color: gray !important
 
   .content h1, .content h2, .content h3, .content h4, strong
-    color: #ccc
+    color: silver
 
   .navbar
-    background-color: #000
+    background-color: black
 
   .navbar-item img
     filter: invert(100%)
 
   .content blockquote
-    background-color: #151515
+    background-color: $near-black
     border-color: #484848

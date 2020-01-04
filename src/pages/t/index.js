@@ -16,7 +16,8 @@ class TagsPage extends React.Component {
       return 0
     })
     let { alphabetical } = this.state
-    if (this.props.location.hash === '#popularity') {
+    // console.dir(this.props.location)
+    if (this.props.location.hash.includes('#popularity')) {
       alphabetical = false
     }
     return (
@@ -40,14 +41,21 @@ class TagsPage extends React.Component {
                     tags
                   </h1>
                   <nav className="topnav">
+                    <div className="link-target">
+                      <span id="alphabetical"></span>
+                      <span id="popularity"></span>
+                    </div>
                     <ul>
                       <li>
-                        Sort tags:{` `}
+                        <small>Sort tags:{` `}</small>
                       </li>
                       <li>
                         <a
                           onClick={() => this.setState({ alphabetical: true })}
                           href="#alphabetical"
+                          className={
+                            alphabetical ? 'button selected' : 'button'
+                          }
                         >
                           Alphabetically
                         </a>
@@ -56,6 +64,9 @@ class TagsPage extends React.Component {
                         <a
                           onClick={() => this.setState({ alphabetical: false })}
                           href="#popularity"
+                          className={
+                            alphabetical ? 'button' : 'button selected'
+                          }
                         >
                           By Popularity
                         </a>
@@ -64,7 +75,7 @@ class TagsPage extends React.Component {
                   </nav>
                 </header>
                 {alphabetical && (
-                  <section id="alphabetical" className="section alphabetical">
+                  <section className="section alphabetical">
                     <nav>
                       <ul className="taglist page">
                         {group.map(tag => (
@@ -79,7 +90,7 @@ class TagsPage extends React.Component {
                   </section>
                 )}
                 {!alphabetical && (
-                  <section id="popularity" className="section popularity">
+                  <section className="section popularity">
                     <nav>
                       <ul className="taglist page">
                         {groupSortedByCount.map(tag => (
