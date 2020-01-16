@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "bulma": "0.8.0",
-    "gatsby": "2.18.22",
+    "gatsby": "2.18.23",
     "gatsby-image": "2.2.38",
     "gatsby-plugin-lodash": "3.1.19",
     "gatsby-plugin-manifest": "2.2.37",
