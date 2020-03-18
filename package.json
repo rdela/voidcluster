@@ -53,7 +53,8 @@
     ],
     "automerge": true,
     "extends": [
-      "config:base"
+      "config:base",
+      "schedule:monthly"
     ],
     "labels": [
       "renovate"
