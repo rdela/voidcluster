@@ -4,9 +4,9 @@ title: from the ground to the void
 date: 2020-04-04T07:54:47.594Z
 description: Number 32 of the 48 vows of Dharmakāra regarding the buddha-field
 tags:
-  - void
   - buddhism
   - india
+  - void
 ---
 ## Vow 32 
 
