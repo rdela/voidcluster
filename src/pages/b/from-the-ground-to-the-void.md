@@ -6,6 +6,7 @@ description: Number 32 of the 48 vows of Amitabha regarding the buddha-field
 tags:
   - buddhism
   - india
+  - sutra
   - void
 ---
 ## Vow 32
