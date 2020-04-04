@@ -10,7 +10,7 @@ tags:
 ---
 ## Vow 32
 
-If after I have obtained the Buddhahood, in that country of mine, there should be magnificent palaces towering up from the ground to the void, also the lakes, winding streams, blossoming trees, and all other properties which are compounded of various jewels and thousands of kinds of perfumes, minutely embellished in the most wondrous state surpassing all heavenly and human worlds. The scent of the perfumes should thoroughly pervade the worlds of ten quarters, whereof the Bodhisattvas, having smelt them thereby directed their minds to Bodhi; otherwise may I not attain the enlightenment.
+> If after I have obtained the Buddhahood, in that country of mine, there should be magnificent palaces towering up from the ground to the void, also the lakes, winding streams, blossoming trees, and all other properties which are compounded of various jewels and thousands of kinds of perfumes, minutely embellished in the most wondrous state surpassing all heavenly and human worlds. The scent of the perfumes should thoroughly pervade the worlds of ten quarters, whereof the Bodhisattvas, having smelt them thereby directed their minds to Bodhi; otherwise may I not attain the enlightenment.
 
 Dharmakara 
 
