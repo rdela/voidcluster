@@ -8,6 +8,7 @@ tags:
   - india
   - sutra
   - void
+  - vow
 ---
 ## Vow 32
 
