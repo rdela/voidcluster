@@ -4,6 +4,7 @@ title: void and unreal
 date: 2019-11-26T02:27:10.232Z
 description: a fading mountain echo
 tags:
+  - buddhism
   - echo
   - haiku
   - poetry
