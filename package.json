@@ -15,7 +15,7 @@
     "test": "gatsby build && gatsby serve"
   },
   "dependencies": {
-    "bulma": "0.8.1",
+    "bulma": "0.8.2",
     "gatsby": "2.20.21",
     "gatsby-image": "2.3.2",
     "gatsby-plugin-lodash": "3.2.1",
