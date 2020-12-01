@@ -1,6 +1,7 @@
 {
   "eslint.enable": false,
   "cSpell.words": [
+    "Ibrahim",
     "automerge",
     "bulma",
     "callout",
@@ -8,9 +9,11 @@
     "jgthms",
     "minireset",
     "postlist",
+    "reina",
     "taglist",
     "topnav",
     "twttr",
-    "voidcluster"
+    "voidcluster",
+    "woodysworld"
   ]
 }
