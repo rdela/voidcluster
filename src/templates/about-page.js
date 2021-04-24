@@ -45,7 +45,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-export default ({ data }) => {
+const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
@@ -58,6 +58,8 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+export default AboutPage
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {

@@ -73,7 +73,7 @@ export const BlogPostTemplate = ({
   )
 }
 
-export default ({ data }) => {
+const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
@@ -98,6 +98,8 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+export default BlogPost
 
 export const blogPostQuery = graphql`
   query BlogPostByID($id: String!) {
