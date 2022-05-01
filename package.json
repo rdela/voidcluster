@@ -41,7 +41,7 @@
     "typeface-source-serif-pro": "1.1.13"
   },
   "devDependencies": {
-    "prettier": "2.6.1"
+    "prettier": "2.6.2"
   },
   "renovate": {
     "assignees": [
