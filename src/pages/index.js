@@ -25,7 +25,7 @@ export default class IndexPage extends React.Component {
               <nav>
                 {posts
                   .filter(
-                    post => post.node.frontmatter.templateKey === 'blog-post'
+                    (post) => post.node.frontmatter.templateKey === 'blog-post'
                   )
                   .map(({ node: post }) => (
                     <div
