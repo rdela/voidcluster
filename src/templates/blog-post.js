@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import TwitterActions from '../components/TwitterActions'
 
+// eslint-disable-next-line
 export const BlogPostTemplate = ({
   content,
   contentComponent,
@@ -55,7 +56,7 @@ export const BlogPostTemplate = ({
                   <div style={{ marginTop: `4rem` }}>
                     <h4>Tags</h4>
                     <ul className="taglist">
-                      {tags.map(tag => (
+                      {tags.map((tag) => (
                         <li key={tag + `tag`}>
                           <Link to={`/t/${kebabCase(tag)}/`}>{tag}</Link>
                         </li>

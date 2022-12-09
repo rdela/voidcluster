@@ -78,7 +78,7 @@ class TagsPage extends React.Component {
                   <section className="section alphabetical">
                     <nav>
                       <ul className="taglist page">
-                        {group.map(tag => (
+                        {group.map((tag) => (
                           <li key={tag.fieldValue}>
                             <Link to={`/t/${kebabCase(tag.fieldValue)}/`}>
                               {tag.fieldValue} ({tag.totalCount})
@@ -93,7 +93,7 @@ class TagsPage extends React.Component {
                   <section className="section popularity">
                     <nav>
                       <ul className="taglist page">
-                        {groupSortedByCount.map(tag => (
+                        {groupSortedByCount.map((tag) => (
                           <li key={tag.fieldValue}>
                             <Link to={`/t/${kebabCase(tag.fieldValue)}/`}>
                               {tag.fieldValue} ({tag.totalCount})
@@ -123,7 +123,7 @@ export const tagPageQuery = graphql`
       }
     }
     allMarkdownRemark(limit: 1000) {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }
