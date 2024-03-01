@@ -42,7 +42,7 @@
 		"typeface-source-serif-pro": "1.1.13"
 	},
 	"devDependencies": {
-		"prettier": "3.2.4"
+		"prettier": "3.2.5"
 	},
 	"renovate": {
 		"assignees": [
